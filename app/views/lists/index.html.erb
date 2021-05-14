@@ -4,6 +4,7 @@
     <% @lists.each do |list| %>
       <li>
         <%= link_to list.name, list_path(list) %></li>
+        <%= cl_image_tag("vbzl4a7ikiu4llx1kh3f", width: 400, height: 300, crop: :fill) %>
     <% end %>
   </ul>
 </div>
