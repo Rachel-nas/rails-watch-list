@@ -1,10 +1,10 @@
 <div class="container">
   <h1>My movies' list</h1>
+  <%= cl_image_tag("vbzl4a7ikiu4llx1kh3f.jpg", width: 400, height: 300, crop: :fill) %>
   <ul>
     <% @lists.each do |list| %>
       <li>
         <%= link_to list.name, list_path(list) %></li>
-        <%= cl_image_tag("vbzl4a7ikiu4llx1kh3f", width: 400, height: 300, crop: :fill) %>
     <% end %>
   </ul>
 </div>
